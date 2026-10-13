@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="be">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Жанчыны, якія набліжалі Перамогу — Сувязь пакаленняў: мы памятаем</title>
+<style>
+:root{--bg:#faf5ea;--card:#fffdf7;--ink:#2b2220;--muted:#6b5d57;--red:#b3262d;--green:#2f6b3a;--line:#e3d6bd;--hero1:#7e1a20;--hero2:#b3262d;--heroink:#fff6e6;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1a1514;--card:#251e1c;--ink:#f1e8da;--muted:#b8a99c;--red:#e5646a;--green:#7bbf88;--line:#3a2f2b;--hero1:#4a1013;--hero2:#7e1a20;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#1a1514;--card:#251e1c;--ink:#f1e8da;--muted:#b8a99c;--red:#e5646a;--green:#7bbf88;--line:#3a2f2b;--hero1:#4a1013;--hero2:#7e1a20;color-scheme:dark}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Georgia,"Times New Roman",serif;line-height:1.7;font-size:18px}
+a{color:var(--red)}
+.wrap{max-width:980px;margin:0 auto;padding:0 20px}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--card);border-bottom:1px solid var(--line);font-family:Arial,sans-serif;font-size:15px}
+nav .wrap{display:flex;flex-wrap:wrap;gap:6px 18px;padding-top:10px;padding-bottom:10px;align-items:center}
+nav a{text-decoration:none;color:var(--ink)}
+nav a:hover{color:var(--red)}
+nav b{color:var(--red);margin-right:auto}
+.orn{height:14px;background:repeating-linear-gradient(90deg,var(--red) 0 14px,transparent 14px 28px,var(--green) 28px 42px,transparent 42px 56px)}
+header.hero{background:linear-gradient(160deg,var(--hero1),var(--hero2));color:var(--heroink);text-align:center;padding:72px 0 64px}
+.hero .tag{font-family:Arial,sans-serif;letter-spacing:.14em;text-transform:uppercase;font-size:13px;opacity:.85}
+.hero h1{font-size:clamp(30px,6vw,56px);line-height:1.15;margin:16px 0}
+.hero p{max-width:640px;margin:0 auto 24px;font-size:19px}
+.btn{display:inline-block;font-family:Arial,sans-serif;font-size:16px;border:0;border-radius:999px;padding:12px 26px;background:var(--heroink);color:var(--hero1);text-decoration:none;cursor:pointer}
+section{padding:56px 0}
+h2{font-size:clamp(24px,4vw,34px);margin:0 0 8px;color:var(--red)}
+h2+.lead{color:var(--muted);margin:0 0 28px}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:16px;margin-top:24px}
+.fact{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;text-align:center}
+.fact strong{display:block;font-size:34px;color:var(--red);line-height:1.1}
+.fact span{font-family:Arial,sans-serif;font-size:14px;color:var(--muted)}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:20px}
+.hcard{background:var(--card);border:1px solid var(--line);border-top:5px solid var(--red);border-radius:14px;padding:22px}
+.hcard h3{margin:0 0 4px;font-size:22px}
+.hcard .role{font-family:Arial,sans-serif;font-size:13px;color:var(--green);text-transform:uppercase;letter-spacing:.06em;margin-bottom:10px}
+details{margin-top:10px}
+summary{cursor:pointer;color:var(--red);font-family:Arial,sans-serif;font-size:15px}
+details p{margin:10px 0 0;font-size:16px}
+.tl{list-style:none;margin:0;padding:0 0 0 22px;border-left:3px solid var(--red)}
+.tl li{position:relative;margin:0 0 22px;padding-left:18px}
+.tl li:before{content:"";position:absolute;left:-31px;top:8px;width:15px;height:15px;border-radius:50%;background:var(--bg);border:3px solid var(--red)}
+.tl time{font-family:Arial,sans-serif;font-weight:bold;color:var(--red)}
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+.box{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px}
+.box h3{margin:0 0 8px}
+.box ul{margin:0;padding-left:20px}
+.quote{border-left:5px solid var(--green);padding:6px 0 6px 20px;font-size:22px;font-style:italic;margin:0}
+.memory{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:26px;text-align:center}
+.candle{font-size:54px;line-height:1;min-height:60px}
+.memory input{font:inherit;font-size:16px;padding:11px 14px;border:1px solid var(--line);border-radius:10px;background:var(--bg);color:var(--ink);width:min(100%,360px)}
+.memory .btn{background:var(--red);color:#fff;margin:6px}
+.wall{list-style:none;margin:22px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+.wall li{background:var(--bg);border:1px solid var(--line);border-radius:999px;padding:6px 16px;font-size:16px}
+.count{font-family:Arial,sans-serif;color:var(--muted);font-size:15px}
+footer{background:var(--card);border-top:1px solid var(--line);font-family:Arial,sans-serif;font-size:14px;color:var(--muted);padding:28px 0 36px}
+@media (max-width:560px){body{font-size:17px}header.hero{padding:52px 0 44px}}
+</style>
+</head>
+<body>
+<nav><div class="wrap"><b>🕯️ Мы памятаем</b><a href="#pra">Пра сайт</a><a href="#gerai">Гераіні</a><a href="#hronika">Хроніка</a><a href="#tyl">У тыле</a><a href="#pamiac">Сцяна памяці</a></div></nav>
+<div class="orn"></div>
+
+<header class="hero"><div class="wrap">
+<div class="tag">Год беларускай жанчыны · 2026</div>
+<h1>Жанчыны, якія набліжалі Перамогу</h1>
+<p>Сувязь пакаленняў: мы памятаем. Гісторыі тых, хто змагаўся ў падполлі, лячыў параненых, гадаваў хлеб і чакаў з вайны сваіх родных.</p>
+<a class="btn" href="#gerai">Пазнаёміцца з гераінямі</a>
+</div></header>
+
+<main>
+<section id="pra"><div class="wrap">
+<h2>Пра што гэты сайт</h2>
+<p class="lead">81 год таму Беларусь была вызвалена ад нямецка-фашысцкіх захопнікаў.</p>
+<p>Вялікая Айчынная вайна нанесла Беларусі страшныя страты: загінуў кожны трэці жыхар рэспублікі. Мужчыны ішлі на фронт і ў лясы да партызан, а жанчыны сталі апорай народа. Яны былі сувязнымі і разведчыцамі, санітаркамі і ўрачамі, працавалі ў полі і на заводах, хавалі параненых і выхоўвалі дзяцей, калі побач грымела вайна.</p>
+<p>Мая мэта — расказаць пра некаторых з гэтых жанчын, каб іх імёны і справы перадаваліся ад бабуль і дзядуль унукам.</p>
+<div class="facts">
+<div class="fact"><strong>1/3</strong><span>жыхароў Беларусі загінула ў гады вайны</span></div>
+<div class="fact"><strong>3 ліпеня 1944</strong><span>вызвалены Мінск</span></div>
+<div class="fact"><strong>22 сакавіка 1943</strong><span>трагедыя Хатыні</span></div>
+</div>
+</div></section>
+
+<section id="gerai" style="background:var(--card)"><div class="wrap">
+<h2>Гераіні падполля</h2>
+<p class="lead">Імёны, якія павінен ведаць кожны беларус. Націсні «Чытаць далей», каб даведацца больш.</p>
+<div class="cards">
+<article class="hcard"><h3>Алена Мазаник</h3><div class="role">Падпольшчыца · Герой Савецкага Саюза</div>
+<p>Працавала пакаёўкай у доме нямецкага генеральнага камісара Беларусі Вільгельма Кубэ.</p>
+<details><summary>Чытаць далей</summary><p>Па заданні мінскага падполля яна падклала міну пад ложак Кубэ. 22 верасня 1943 года ён быў забіты. Для Алены гэта быў выбар паміж страхам і абавязкам перад Радзімай. Пасля аперацыі яна з сям'ёй сышла да партызан, а за мужнасць атрымала званне Героя Савецкага Саюза.</p></details></article>
+
+<article class="hcard"><h3>Марыя Асіпава</h3><div class="role">Падпольшчыца · Герой Савецкага Саюза</div>
+<p>Удзельніца мінскага падполля, якая разам з Аленай Мазаник удзельнічала ў аперацыі супраць Кубэ.</p>
+<details><summary>Чытаць далей</summary><p>Падполле працавала ў горадзе, поўным ворагаў, і кожны дзень рызыкаваў жыццём. Марыя Асіпава належала да тых, хто не баяўся рабіць цяжкія справы. За ўдзел у аперацыі яна была ўдастоена звання Героя Савецкага Саюза.</p></details></article>
+
+<article class="hcard"><h3>Вера Харужая</h3><div class="role">Арганізатар падполля · Герой Савецкага Саюза</div>
+<p>Кіравала падпольнай барацьбой у Віцебску ў першыя месяцы акупацыі.</p>
+<details><summary>Чытаць далей</summary><p>Яшчэ да вайны Вера Харужая ўдзельнічала ў барацьбе камуністаў Заходняй Беларусі. У 1941 годзе яна арганізоўвала падполле ў Віцебску, але ў 1942 годзе была схоплена і загінула. Звання Героя Савецкага Саюза яна ўдастоена пасмяротна.</p></details></article>
+</div>
+</div></section>
+
+<section id="hronika"><div class="wrap">
+<h2>Хроніка вайны</h2>
+<p class="lead">Асноўныя даты, праз якія прайшлі нашы продкі.</p>
+<ol class="tl">
+<li><time>22 чэрвеня 1941</time><br>Пачатак Вялікай Айчыннай вайны. Беларусь першай прымае ўдар.</li>
+<li><time>1941–1943</time><br>Разгортваецца партызанскі і падпольны рух. Жанчыны ходзяць у разведку, перадаюць весткі, ратуюць параненых і дзяцей.</li>
+<li><time>22 сакавіка 1943</time><br>Карнікі спальваюць вёску Хатынь разам з жыхарамі. Яна стала сімвалам тысяч знішчаных беларускіх вёсак.</li>
+<li><time>22 верасня 1943</time><br>Мінскае падполле знішчае Вільгельма Кубэ.</li>
+<li><time>3 ліпеня 1944</time><br>Вызваленне Мінска ў ходзе аперацыі «Баграціён».</li>
+<li><time>9 мая 1945</time><br>Дзень Перамогі.</li>
+</ol>
+</div></section>
+
+<section id="tyl" style="background:var(--card)"><div class="wrap">
+<h2>Жанчыны ў тыле і на франтах</h2>
+<p class="lead">Не толькі ў падполлі, але і ў звычайных справах хаваўся подзвіг.</p>
+<div class="two">
+<div class="box"><h3>Медыкі</h3><p>Урачы, медсёстры і санітаркі выносілі параненых з поля бою, рабілі аперацыі пад агнём і вярталі салдат у строй.</p></div>
+<div class="box"><h3>Працаўніцы тыла</h3><p>Жанчыны працавалі ў полі і на заводах, каб армія мела хлеб, боепрыпасы і адзенне. Часта працаваць даводзілася разам з падлеткамі і старымі.</p></div>
+<div class="box"><h3>Маці і ўдовы</h3><p>Многія вырасцілі дзяцей без мужа і бацькі. Яны захавалі сем'і, мову і песні, а потым аднавілі разбураныя гарады і вёскі.</p></div>
+</div>
+<p style="margin-top:36px"><q class="quote" style="display:block">Подзвіг жанчыны — не толькі ў гераічным ўчынку, але і ў штодзённай вернасці роднаму дому.</q></p>
+</div></section>
+
+<section id="zviazak"><div class="wrap">
+<h2>Сувязь пакаленняў</h2>
+<p class="lead">Памяць жыве, пакуль мы пра яе расказваем.</p>
+<div class="two">
+<div class="box"><h3>Што можна зрабіць сёння</h3><ul>
+<li>Папрасіць бабулю ці прабабулю расказаць пра свае ўспаміны.</li>
+<li>Запісаць расказ на дыктафон ці ў сшытак.</li>
+<li>Знайсці ў сямейным архіве лісты, фотаздымкі, дакументы.</li>
+<li>Наведаць помнік ці музей у сваім горадзе.</li>
+</ul></div>
+<div class="box"><h3>Пра што пытацца</h3><ul>
+<li>Дзе вы жылі ў гады вайны?</li>
+<li>Што было самым цяжкім?</li>
+<li>Хто дапамагаў у цяжкую хвіліну?</li>
+<li>Што б вы хацелі, каб мы памяталі?</li>
+</ul></div>
+</div>
+</div></section>
+
+<section id="pamiac" style="background:var(--card)"><div class="wrap">
+<h2>Сцяна памяці</h2>
+<p class="lead">Запалі свечку і дадай імя жанчыны з твайго роду, якую ты помніш і шануеш.</p>
+<div class="memory">
+<div class="candle" id="candles" aria-live="polite"></div>
+<p class="count" id="count">Свечак запалена: 0</p>
+<input id="name" type="text" maxlength="40" placeholder="Напрыклад: бабуля Ганна" aria-label="Імя жанчыны">
+<br>
+<button class="btn" id="add" type="button">Запаліць свечку</button>
+<ul class="wall" id="wall"></ul>
+</div>
+</div></section>
+</main>
+
+<div class="orn"></div>
+<footer><div class="wrap">
+Сайт створаны для раённага этапу рэспубліканскага конкурса камп'ютэрных распрацовак патрыятычнай накіраванасці «ПАТРЫЁТ.by», намінацыя «Сувязь пакаленняў: мы памятаем».<br>
+Аўтар: ______________________ · Установа адукацыі: ______________________ · Кіраўнік: ______________________
+</div></footer>
+
+<script>
+(function(){
+var count=0,add=document.getElementById('add'),input=document.getElementById('name'),
+wall=document.getElementById('wall'),c=document.getElementById('candles'),n=document.getElementById('count');
+function light(){
+  var v=input.value.replace(/^\s+|\s+$/g,'');
+  count++;
+  c.textContent=new Array(Math.min(count,7)+1).join('🕯️ ');
+  n.textContent='Свечак запалена: '+count;
+  if(v){var li=document.createElement('li');li.textContent='🕯️ '+v;wall.appendChild(li);}
+  input.value='';input.focus();
+}
+add.addEventListener('click',light);
+input.addEventListener('keydown',function(e){if(e.key==='Enter'){light();}});
+})();
+</script>
+</body>
+</html>
